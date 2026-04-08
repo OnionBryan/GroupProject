@@ -99,6 +99,9 @@ body{background:#000}
 .impl-num{width:26px;height:26px;border:1px solid rgba(212,168,67,0.4);color:var(--gold);font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
 .impl-text{font-size:12px;line-height:1.5;color:rgba(255,255,255,0.82)}
 .impl-text strong{color:#fff;display:block;margin-bottom:2px}
+.bullet-list{list-style:none;padding:0;margin:0 0 0 0;display:flex;flex-direction:column;gap:6px;}
+.bullet-list li{font-size:11px;line-height:1.45;color:rgba(255,255,255,0.82);padding-left:14px;position:relative;}
+.bullet-list li::before{content:'·';position:absolute;left:0;color:var(--gold);font-weight:700;font-size:14px;line-height:1.1;}
 
 /* ── CENTER ──────────────────────────────── */
 .col-m{
@@ -266,19 +269,35 @@ body{background:#000}
   </div>
 
   <div class="impl-block">
-    <div class="impl-hdr">Implications for Standard-Setters &amp; Auditors</div>
-    <div class="impl-item">
-      <div class="impl-num">1</div>
-      <div class="impl-text"><strong>Standard-Setters (FASB):</strong> ASC 360-10 lacks guidance for assets with 18-month generational cycles and no secondary market. The pending FASB agenda request on vendor warrants (ASC 606 / ASC 718) needs resolution ·$10.3B in annual revenue recognition is at stake.</div>
-    </div>
-    <div class="impl-item">
-      <div class="impl-num">2</div>
-      <div class="impl-text"><strong>Auditors:</strong> Going concern assessment requires integrating three measurement gaps simultaneously ·depreciation, revenue, and off-balance-sheet leverage. Evaluated individually, each may appear manageable. Combined, ROIC is negative in every scenario against an 11.13% WACC.</div>
-    </div>
-    <div class="impl-item">
-      <div class="impl-num">3</div>
-      <div class="impl-text"><strong>Financial Statement Users:</strong> Reported debt of $21.6B understates economic leverage by $22B in uncommenced leases. Depreciation choices that extend useful life inflate EBITDA and DSCR covenant compliance ·the same metrics lenders use to price and monitor these facilities.</div>
-    </div>
+
+    <div class="impl-hdr">Problem Setting</div>
+    <ul class="bullet-list">
+      <li>$35B in GPU-backed debt originated 2023–2025 with no established accounting precedent</li>
+      <li>Hardware depreciates 18-month cycles; ASC 360-10 written for durable physical plant</li>
+      <li>Lenders price covenant compliance on EBITDA metrics that management can shift via useful-life elections</li>
+    </ul>
+
+    <div class="impl-hdr" style="margin-top:14px;">Literature Gap</div>
+    <ul class="bullet-list">
+      <li>Vendor-financing collapses (Lucent, GE Capital) show collateral value risk is systematic, not idiosyncratic</li>
+      <li>No prior study measures ASC 360 / 606 / 842 interaction in technology-collateralized debt</li>
+      <li>BIS (2026) flags AI-financing as an emerging macro-financial risk with no measurement framework</li>
+    </ul>
+
+    <div class="impl-hdr" style="margin-top:14px;">Conceptual Framing</div>
+    <ul class="bullet-list">
+      <li>ASC 360-10 useful-life discretion as an earnings management lever (Watts &amp; Zimmerman 1986)</li>
+      <li>ASC 842 commencement-date rule as off-balance-sheet leverage channel</li>
+      <li>Shleifer &amp; Vishny (1992) fire-sale liquidation: no secondary GPU market implies near-zero recovery</li>
+    </ul>
+
+    <div class="impl-hdr" style="margin-top:14px;">Research Method</div>
+    <ul class="bullet-list">
+      <li>Single case study: CoreWeave FY2025 10-K, S-1, 8-K covenant amendments</li>
+      <li>Scenario analysis across 2yr / 4yr / 6yr useful-life elections · ROIC vs. 11.13% WACC</li>
+      <li>Lease capitalization: implied borrowing rate applied to $38.5B uncommenced leases</li>
+    </ul>
+
   </div>
 
 </div>
