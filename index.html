@@ -93,15 +93,15 @@ body{background:#000}
   flex:1;
   overflow:auto;
 }
-.impl-hdr{font-family:'IBM Plex Mono',monospace;font-size:9px;letter-spacing:2.5px;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.impl-hdr{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:2px;text-transform:uppercase;color:var(--gold);margin-bottom:10px}
 .impl-item{display:flex;gap:14px;margin-bottom:20px}
 .impl-item:last-child{margin-bottom:0}
 .impl-num{width:26px;height:26px;border:1px solid rgba(212,168,67,0.4);color:var(--gold);font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:600;border-radius:50%;display:flex;align-items:center;justify-content:center;flex-shrink:0;margin-top:2px}
 .impl-text{font-size:12px;line-height:1.5;color:rgba(255,255,255,0.82)}
 .impl-text strong{color:#fff;display:block;margin-bottom:2px}
-.bullet-list{list-style:none;padding:0;margin:0 0 0 0;display:flex;flex-direction:column;gap:6px;}
-.bullet-list li{font-size:11px;line-height:1.45;color:rgba(255,255,255,0.82);padding-left:14px;position:relative;}
-.bullet-list li::before{content:'·';position:absolute;left:0;color:var(--gold);font-weight:700;font-size:14px;line-height:1.1;}
+.bullet-list{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;}
+.bullet-list li{font-size:15px;line-height:1.4;color:rgba(255,255,255,0.88);padding-left:18px;position:relative;font-family:Georgia,serif;}
+.bullet-list li::before{content:'·';position:absolute;left:0;color:var(--gold);font-weight:700;font-size:18px;line-height:1;}
 
 /* ── CENTER ──────────────────────────────── */
 .col-m{
@@ -273,29 +273,15 @@ body{background:#000}
     <div class="impl-hdr">Problem Setting</div>
     <ul class="bullet-list">
       <li>$35B in GPU-backed debt originated 2023–2025 with no established accounting precedent</li>
-      <li>Hardware depreciates 18-month cycles; ASC 360-10 written for durable physical plant</li>
-      <li>Lenders price covenant compliance on EBITDA metrics that management can shift via useful-life elections</li>
-    </ul>
-
-    <div class="impl-hdr" style="margin-top:14px;">Literature Gap</div>
-    <ul class="bullet-list">
       <li>Vendor-financing collapses (Lucent, GE Capital) show collateral value risk is systematic, not idiosyncratic</li>
-      <li>No prior study measures ASC 360 / 606 / 842 interaction in technology-collateralized debt</li>
+      <li>Lenders price covenant compliance on EBITDA metrics management can shift via useful-life elections</li>
+    </ul>
+
+    <div class="impl-hdr" style="margin-top:18px;">Literature Gap</div>
+    <ul class="bullet-list">
+      <li>Hardware depreciates on 18-month cycles; ASC 360-10 was written for durable physical plant — standards lag asset class</li>
+      <li>No prior study examines ASC 360 / 606 / 842 interaction in technology-collateralized debt</li>
       <li>BIS (2026) flags AI-financing as an emerging macro-financial risk with no measurement framework</li>
-    </ul>
-
-    <div class="impl-hdr" style="margin-top:14px;">Conceptual Framing</div>
-    <ul class="bullet-list">
-      <li>ASC 360-10 useful-life discretion as an earnings management lever (Watts &amp; Zimmerman 1986)</li>
-      <li>ASC 842 commencement-date rule as off-balance-sheet leverage channel</li>
-      <li>Shleifer &amp; Vishny (1992) fire-sale liquidation: no secondary GPU market implies near-zero recovery</li>
-    </ul>
-
-    <div class="impl-hdr" style="margin-top:14px;">Research Method</div>
-    <ul class="bullet-list">
-      <li>Single case study: CoreWeave FY2025 10-K, S-1, 8-K covenant amendments</li>
-      <li>Scenario analysis across 2yr / 4yr / 6yr useful-life elections · ROIC vs. 11.13% WACC</li>
-      <li>Lease capitalization: implied borrowing rate applied to $38.5B uncommenced leases</li>
     </ul>
 
   </div>
@@ -338,99 +324,48 @@ body{background:#000}
   <div class="panel">
     <div class="panel-hdr">CoreWeave ·The Case Study (FY2025 10-K)</div>
     <div class="panel-body" style="padding:7px 10px;">
-      <!-- Key metrics grid -->
       <div style="display:grid;grid-template-columns:1fr 1fr;gap:4px;">
         <div style="background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:3px;padding:5px 7px;">
           <div style="font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:600;color:#fff;line-height:1;">$21.6B</div>
-          <div style="font-size:9px;color:var(--dim);margin-top:2px;line-height:1.3;">Total debt, 12 instruments · Note 10</div>
+          <div style="font-size:10px;color:var(--dim);margin-top:2px;line-height:1.3;">Total debt · 12 instruments</div>
         </div>
         <div style="background:rgba(232,64,79,0.08);border:1px solid rgba(232,64,79,0.25);border-radius:3px;padding:5px 7px;">
           <div style="font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:600;color:var(--red);line-height:1;">–$7.2B</div>
-          <div style="font-size:9px;color:var(--dim);margin-top:2px;line-height:1.3;">Free cash flow FY2025</div>
+          <div style="font-size:10px;color:var(--dim);margin-top:2px;line-height:1.3;">Free cash flow FY2025</div>
         </div>
         <div style="background:rgba(255,255,255,0.04);border:1px solid var(--border);border-radius:3px;padding:5px 7px;">
           <div style="font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:600;color:#fff;line-height:1;">$38.5B</div>
-          <div style="font-size:9px;color:var(--dim);margin-top:2px;line-height:1.3;">Uncommenced leases (ASC 842)</div>
+          <div style="font-size:10px;color:var(--dim);margin-top:2px;line-height:1.3;">Uncommenced leases (ASC 842)</div>
         </div>
         <div style="background:rgba(232,64,79,0.08);border:1px solid rgba(232,64,79,0.25);border-radius:3px;padding:5px 7px;">
           <div style="font-family:'IBM Plex Mono',monospace;font-size:15px;font-weight:600;color:var(--red);line-height:1;">–0.04×</div>
-          <div style="font-size:9px;color:var(--dim);margin-top:2px;line-height:1.3;">EBIT / interest coverage</div>
+          <div style="font-size:10px;color:var(--dim);margin-top:2px;line-height:1.3;">EBIT / interest coverage</div>
         </div>
       </div>
     </div>
   </div>
 
-  <!-- Three Accounting Gaps -->
+  <!-- Conceptual Framing -->
   <div class="panel">
-    <div class="panel-hdr">Three Accounting Measurement Gaps ·Paper Findings</div>
+    <div class="panel-hdr">Conceptual Framing</div>
     <div class="panel-body" style="padding:12px 14px;">
-      <div style="display:flex;flex-direction:column;gap:12px;">
-
-        <div style="display:flex;gap:12px;align-items:flex-start;">
-          <div style="flex-shrink:0;width:32px;height:32px;background:rgba(212,168,67,0.15);border:1px solid rgba(212,168,67,0.4);border-radius:3px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:700;color:var(--gold);">1</div>
-          <div>
-            <div style="font-size:11px;font-weight:700;color:#fff;margin-bottom:3px;">Depreciation Divergence ·ASC 360-10</div>
-            <div style="font-size:11px;color:rgba(255,255,255,0.72);line-height:1.5;">Useful life estimates span <strong style="color:#fff;">2 to 6 years</strong> across identical hardware. $2.7B annual depreciation gap exceeds EBITDA. All recent changes trend toward longer lives ·consistent with earnings management. <strong style="color:var(--red);">ROIC negative in every scenario</strong> vs. 11.13% WACC.</div>
-          </div>
-        </div>
-
-        <div style="display:flex;gap:12px;align-items:flex-start;">
-          <div style="flex-shrink:0;width:32px;height:32px;background:rgba(212,168,67,0.15);border:1px solid rgba(212,168,67,0.4);border-radius:3px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:700;color:var(--gold);">2</div>
-          <div>
-            <div style="font-size:11px;font-weight:700;color:#fff;margin-bottom:3px;">Revenue Recognition Gap ·ASC 606 / ASC 718</div>
-            <div style="font-size:11px;color:rgba(255,255,255,0.72);line-height:1.5;">AMD warrant grants to Meta &amp; OpenAI (320M shares, $0.01 strike) tied to chip purchase milestones raise an unresolved ASC 606-10-32-25 question. Upper-bound revenue reduction: <strong style="color:var(--red);">$10.3B / yr (32% of recognized revenue)</strong>. FASB has not yet acted.</div>
-          </div>
-        </div>
-
-        <div style="display:flex;gap:12px;align-items:flex-start;">
-          <div style="flex-shrink:0;width:32px;height:32px;background:rgba(212,168,67,0.15);border:1px solid rgba(212,168,67,0.4);border-radius:3px;display:flex;align-items:center;justify-content:center;font-family:'IBM Plex Mono',monospace;font-size:13px;font-weight:700;color:var(--gold);">3</div>
-          <div>
-            <div style="font-size:11px;font-weight:700;color:#fff;margin-bottom:3px;">Off-Balance-Sheet Leverage ·ASC 842</div>
-            <div style="font-size:11px;color:rgba(255,255,255,0.72);line-height:1.5;">$38.5B uncommenced data center leases disclosed but not recognized (commencement timing rule). Capitalizing at implied borrowing rate adds <strong style="color:#fff;">$22B to invested capital</strong> ·nearly doubling reported leverage. ROIC compresses to <strong style="color:var(--red);">–3.8%</strong> in the most favorable scenario.</div>
-          </div>
-        </div>
-
-      </div>
+      <ul class="bullet-list">
+        <li>Watts &amp; Zimmerman (1986) Positive Accounting Theory: managers select useful-life estimates to maximize EBITDA and satisfy DSCR covenant thresholds</li>
+        <li>Shleifer &amp; Vishny (1992) asset specificity: GPU collateral has no deep secondary market · industry-wide distress produces near-zero liquidation recovery</li>
+        <li>Jensen &amp; Meckling (1976) agency costs of debt: information asymmetry between lenders and borrowers on collateral value enables systematic understatement of leverage</li>
+      </ul>
     </div>
   </div>
 
-  <!-- Refinancing Wall -->
-  <div class="panel" style="flex:1;min-height:0;display:flex;flex-direction:column;">
-    <div class="panel-hdr">CoreWeave Debt Maturity ·$21.6B Total, FCF –$7.2B/yr</div>
-    <div class="panel-body" style="flex:1;display:flex;flex-direction:column;justify-content:flex-start;padding:8px 10px;overflow:hidden;">
-      <svg viewBox="0 0 360 100" xmlns="http://www.w3.org/2000/svg" style="max-width:100%;flex-shrink:0;">
-        <line x1="38" y1="0" x2="38" y2="78" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <line x1="38" y1="78" x2="358" y2="78" stroke="rgba(255,255,255,0.12)" stroke-width="1"/>
-        <text x="34" y="5"  text-anchor="end" fill="#445566" font-family="IBM Plex Mono,monospace" font-size="7.5">$7B</text>
-        <text x="34" y="43" text-anchor="end" fill="#445566" font-family="IBM Plex Mono,monospace" font-size="7.5">$3.5B</text>
-        <text x="34" y="81" text-anchor="end" fill="#445566" font-family="IBM Plex Mono,monospace" font-size="7.5">$0</text>
-        <line x1="38" y1="39" x2="358" y2="39" stroke="rgba(255,255,255,0.06)" stroke-width="0.5" stroke-dasharray="3,3"/>
-        <!-- 2026: $6.7B → 78*(6.7/7)=76.2 -->
-        <rect x="46"  y="1.8"  width="44" height="76.2" fill="var(--red)" opacity="0.85"/>
-        <text x="68"  y="95" text-anchor="middle" fill="#556677" font-family="IBM Plex Mono,monospace" font-size="8">2026</text>
-        <text x="68"  y="14" text-anchor="middle" fill="#fff" font-family="IBM Plex Mono,monospace" font-size="9" font-weight="600">$6.7B</text>
-        <!-- 2027: $4.3B → 78*(4.3/7)=47.9 -->
-        <rect x="102" y="30.1" width="44" height="47.9" fill="var(--red)" opacity="0.65"/>
-        <text x="124" y="95" text-anchor="middle" fill="#556677" font-family="IBM Plex Mono,monospace" font-size="8">2027</text>
-        <text x="124" y="43" text-anchor="middle" fill="#fff" font-family="IBM Plex Mono,monospace" font-size="9" font-weight="600">$4.3B</text>
-        <!-- 2028: $2.4B → 78*(2.4/7)=26.7 -->
-        <rect x="158" y="51.3" width="44" height="26.7" fill="#2A5F8E" opacity="0.85"/>
-        <text x="180" y="95" text-anchor="middle" fill="#556677" font-family="IBM Plex Mono,monospace" font-size="8">2028</text>
-        <text x="180" y="64" text-anchor="middle" fill="#fff" font-family="IBM Plex Mono,monospace" font-size="9" font-weight="600">$2.4B</text>
-        <!-- 2029: $1.8B → 78*(1.8/7)=20 -->
-        <rect x="214" y="58"   width="44" height="20" fill="#2A5F8E" opacity="0.65"/>
-        <text x="236" y="95" text-anchor="middle" fill="#556677" font-family="IBM Plex Mono,monospace" font-size="8">2029</text>
-        <text x="236" y="71" text-anchor="middle" fill="#fff" font-family="IBM Plex Mono,monospace" font-size="9" font-weight="600">$1.8B</text>
-        <!-- 2030: $2.1B → 78*(2.1/7)=23.4 -->
-        <rect x="270" y="54.6" width="44" height="23.4" fill="#7B5EA7" opacity="0.85"/>
-        <text x="292" y="95" text-anchor="middle" fill="#556677" font-family="IBM Plex Mono,monospace" font-size="8">2030</text>
-        <text x="292" y="67" text-anchor="middle" fill="#fff" font-family="IBM Plex Mono,monospace" font-size="9" font-weight="600">$2.1B</text>
-        <!-- After: $4.3B -->
-        <rect x="314" y="30.1" width="40" height="47.9" fill="#7B5EA7" opacity="0.65"/>
-        <text x="334" y="95" text-anchor="middle" fill="#556677" font-family="IBM Plex Mono,monospace" font-size="8">2031+</text>
-        <text x="334" y="43" text-anchor="middle" fill="#fff" font-family="IBM Plex Mono,monospace" font-size="9" font-weight="600">$4.3B</text>
-      </svg>
-      <div class="callout-r" style="margin-top:6px;font-size:9px;line-height:1.4;">Dec 2025 covenant amendments: DSCR testing deferred to Oct 2027, liquidity floor cut to $100M, unlimited equity cures. CDS spreads doubled since Oct 2025. EBIT/interest = –0.04×. Senior notes trading above coupon.</div>
+  <!-- Research Method -->
+  <div class="panel" style="flex:1;display:flex;flex-direction:column;">
+    <div class="panel-hdr">Research Method</div>
+    <div class="panel-body" style="flex:1;padding:12px 14px;">
+      <ul class="bullet-list">
+        <li>Single case study: CoreWeave FY2025 10-K, S-1, 8-K covenant amendments</li>
+        <li>Scenario analysis across 2yr / 4yr / 6yr useful-life elections · ROIC vs. 11.13% WACC</li>
+        <li>Lease capitalization: implied borrowing rate applied to $38.5B uncommenced leases</li>
+      </ul>
     </div>
   </div>
 
